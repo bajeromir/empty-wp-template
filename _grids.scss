@@ -1,0 +1,25 @@
+// Requirements
+// ============
+
+@import "susy";
+
+$susy: (
+    flow: ltr,
+    math: fluid,
+    output: float,
+    gutter-position: after,
+    container: 1160px,
+    // container: 1400px,
+    container-position: center,
+    columns: 12,
+    gutters: 1.875,
+    column-width: 4.1875,
+    global-box-sizing: content-box,
+    last-flow: to,
+    debug: (
+        image: hide,
+        color: rgba(#66f, .25),
+        output: background,
+        toggle: top right,
+    )
+);

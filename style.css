@@ -1,0 +1,249 @@
+/*
+Theme Name: ...
+Theme URI: https://reaktor5.com/
+Author: the Reaktor 5 team
+Author URI: https://reaktor5.com/
+Description: ...
+Version: ...
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: 
+Text Domain: ...
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+/* import compass and susy */
+/* import mediaqueries and base project variables */
+/* import basic styles */
+/* line 1, _setup.scss */
+body,
+button,
+input,
+select,
+textarea {
+  color: black;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  line-height: 1.5; }
+
+/* line 14, _setup.scss */
+html, body {
+  margin: 0 auto;
+  height: 100%;
+  padding: 0;
+  max-width: 1920px; }
+
+/* line 23, _setup.scss */
+body {
+  overflow-x: hidden; }
+  /* line 26, _setup.scss */
+  body > #wpadminbar {
+    left: auto !important;
+    max-width: 1920px; }
+  /* line 31, _setup.scss */
+  body > .wrapper {
+    display: table;
+    table-layout: fixed;
+    height: 100%;
+    width: 100%;
+    overflow: visible;
+    background-color: white; }
+    /* line 40, _setup.scss */
+    body > .wrapper > * > div {
+      display: table-row;
+      height: 0; }
+    /* line 46, _setup.scss */
+    body > .wrapper > header {
+      display: table-header-group; }
+    /* line 50, _setup.scss */
+    body > .wrapper > main {
+      display: table-row-group; }
+      /* line 53, _setup.scss */
+      body > .wrapper > main > div {
+        height: auto; }
+        /* line 56, _setup.scss */
+        body > .wrapper > main > div > div {
+          min-height: 100%; }
+    /* line 62, _setup.scss */
+    body > .wrapper > footer {
+      display: table-footer-group; }
+
+/* line 76, _setup.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700; }
+
+/* line 80, _setup.scss */
+h1 {
+  margin-top: 0.83333333em;
+  margin-bottom: 0.83333333em;
+  font-size: 2em;
+  line-height: 1.11111111em; }
+  /* line 86, _setup.scss */
+  h1 + h1 {
+    margin-top: -0.83333333em; }
+  /* line 87, _setup.scss */
+  h2 + h1 {
+    margin-top: -0.66666667em; }
+  /* line 88, _setup.scss */
+  h3 + h1 {
+    margin-top: -0.5em; }
+  /* line 89, _setup.scss */
+  h4 + h1 {
+    margin-top: -0.33333333em; }
+  /* line 90, _setup.scss */
+  h5 + h1 {
+    margin-top: -0.22222222em; }
+  /* line 91, _setup.scss */
+  h6 + h1 {
+    margin-top: -0.11111111em; }
+
+/* line 94, _setup.scss */
+h2 {
+  margin-top: 0.83333333em;
+  margin-bottom: 0.83333333em;
+  font-size: 2em;
+  line-height: 1.11111111em; }
+  /* line 100, _setup.scss */
+  h1 + h2 {
+    margin-top: -1em; }
+  /* line 101, _setup.scss */
+  h2 + h2 {
+    margin-top: -0.8em; }
+  /* line 102, _setup.scss */
+  h3 + h2 {
+    margin-top: -0.6em; }
+  /* line 103, _setup.scss */
+  h4 + h2 {
+    margin-top: -0.4em; }
+  /* line 104, _setup.scss */
+  h5 + h2 {
+    margin-top: -0.26666667em; }
+  /* line 105, _setup.scss */
+  h6 + h2 {
+    margin-top: -0.13333333em; }
+
+/* line 108, _setup.scss */
+h3 {
+  margin-top: 0.75em;
+  margin-bottom: 0.75em;
+  font-size: 1.33333333em;
+  line-height: 1.16666667em; }
+  /* line 114, _setup.scss */
+  h1 + h3 {
+    margin-top: -1.25em; }
+  /* line 115, _setup.scss */
+  h2 + h3 {
+    margin-top: -1em; }
+  /* line 116, _setup.scss */
+  h3 + h3 {
+    margin-top: -0.75em; }
+  /* line 117, _setup.scss */
+  h4 + h3 {
+    margin-top: -0.5em; }
+  /* line 118, _setup.scss */
+  h5 + h3 {
+    margin-top: -0.33333333em; }
+  /* line 119, _setup.scss */
+  h6 + h3 {
+    margin-top: -0.16666667em; }
+
+/* line 122, _setup.scss */
+h4 {
+  margin-top: 0.77777778em;
+  margin-bottom: 0.77777778em;
+  font-size: 1em;
+  line-height: 1.22222222em; }
+  /* line 128, _setup.scss */
+  h1 + h4 {
+    margin-top: -1.66666667em; }
+  /* line 129, _setup.scss */
+  h2 + h4 {
+    margin-top: -1.33333333em; }
+  /* line 130, _setup.scss */
+  h3 + h4 {
+    margin-top: -1em; }
+  /* line 131, _setup.scss */
+  h4 + h4 {
+    margin-top: -0.66666667em; }
+  /* line 132, _setup.scss */
+  h5 + h4 {
+    margin-top: -0.44444444em; }
+  /* line 133, _setup.scss */
+  h6 + h4 {
+    margin-top: -0.22222222em; }
+
+/* line 136, _setup.scss */
+h5 {
+  margin-top: 0.71428571em;
+  margin-bottom: 0.71428571em;
+  font-size: 0.77777778em;
+  line-height: 1.28571429em; }
+  /* line 142, _setup.scss */
+  h1 + h5 {
+    margin-top: -2.14285714em; }
+  /* line 143, _setup.scss */
+  h2 + h5 {
+    margin-top: -1.71428571em; }
+  /* line 144, _setup.scss */
+  h3 + h5 {
+    margin-top: -1.28571429em; }
+  /* line 145, _setup.scss */
+  h4 + h5 {
+    margin-top: -0.85714286em; }
+  /* line 146, _setup.scss */
+  h5 + h5 {
+    margin-top: -0.57142857em; }
+  /* line 147, _setup.scss */
+  h6 + h5 {
+    margin-top: -0.28571429em; }
+
+/* line 150, _setup.scss */
+h6 {
+  margin-top: 0.6em;
+  margin-bottom: 0.6em;
+  font-size: 0.55555556em;
+  line-height: 1.4em; }
+  /* line 156, _setup.scss */
+  h1 + h6 {
+    margin-top: -3em; }
+  /* line 157, _setup.scss */
+  h2 + h6 {
+    margin-top: -2.4em; }
+  /* line 158, _setup.scss */
+  h3 + h6 {
+    margin-top: -1.8em; }
+  /* line 159, _setup.scss */
+  h4 + h6 {
+    margin-top: -1.2em; }
+  /* line 160, _setup.scss */
+  h5 + h6 {
+    margin-top: -0.8em; }
+  /* line 161, _setup.scss */
+  h6 + h6 {
+    margin-top: -0.4em; }
+
+/* line 164, _setup.scss */
+p {
+  margin-top: 0.77777778em;
+  margin-bottom: 0.77777778em;
+  font-size: 1em;
+  line-height: 1.22222222em;
+  line-height: 1.33333333em; }
+
+/* line 172, _setup.scss */
+a {
+  color: red;
+  text-decoration: none;
+  opacity: 1;
+  -webkit-transition-property: opacity;
+  transition-property: opacity;
+  -webkit-transition-duration: 0.25s;
+  transition-duration: 0.25s; }
+  /* line 179, _setup.scss */
+  a:focus, a:hover {
+    opacity: .75; }
+
+/* import header, main menu and footer styles */
+/* single page, post styles */
+/* custom page styles */

@@ -1,0 +1,184 @@
+body,
+button,
+input,
+select,
+textarea {
+	color: $text-color;
+	font-family: $font-family, sans-serif;
+	font-size: 16px;
+	line-height: 1.5;
+}
+
+
+
+html, body {
+	margin: 0 auto;
+	height: 100%;
+	padding: 0;
+	max-width: 1920px;
+}
+
+
+
+body {
+	overflow-x: hidden;
+	
+	> #wpadminbar {
+		left: auto !important;
+		max-width: 1920px;
+	}
+
+	> .wrapper {
+		display: table;
+		table-layout: fixed;
+		height: 100%;
+		width: 100%;
+		overflow: visible;
+		background-color: white;
+		
+		> * {
+			> div {
+				display: table-row;
+				height: 0;
+			}
+		}
+		
+		> header {
+			display: table-header-group;
+		}
+		
+		> main {
+			display: table-row-group;
+			
+			> div {
+				height: auto;
+				
+				> div {
+					min-height: 100%;
+				}
+			}
+		}
+		
+		> footer {
+			display: table-footer-group;
+		}
+	}
+}
+
+
+
+* {
+	
+}
+
+
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight: 700;
+}
+
+h1 {
+	margin-top: (30/36 * 1em);
+	margin-bottom: (30/36 * 1em);
+	font-size: (36/18 * 1em);
+	line-height: (40/36 * 1em);
+	
+	h1 + & { margin-top: ((6-36)/36 * 1em); }
+	h2 + & { margin-top: ((6-30)/36 * 1em); }
+	h3 + & { margin-top: ((6-24)/36 * 1em); }
+	h4 + & { margin-top: ((6-18)/36 * 1em); }
+	h5 + & { margin-top: ((6-14)/36 * 1em); }
+	h6 + & { margin-top: ((6-10)/36 * 1em); }
+}
+
+h2 {
+	margin-top: (30/36 * 1em);
+	margin-bottom: (30/36 * 1em);
+	font-size: (36/18 * 1em);
+	line-height: (40/36 * 1em);
+	
+	h1 + & { margin-top: ((6-36)/30 * 1em); }
+	h2 + & { margin-top: ((6-30)/30 * 1em); }
+	h3 + & { margin-top: ((6-24)/30 * 1em); }
+	h4 + & { margin-top: ((6-18)/30 * 1em); }
+	h5 + & { margin-top: ((6-14)/30 * 1em); }
+	h6 + & { margin-top: ((6-10)/30 * 1em); }
+}
+
+h3 {
+	margin-top: (18/24 * 1em);
+	margin-bottom: (18/24 * 1em);
+	font-size: (24/18 * 1em);
+	line-height: (28/24 * 1em);
+	
+	h1 + & { margin-top: ((6-36)/24 * 1em); }
+	h2 + & { margin-top: ((6-30)/24 * 1em); }
+	h3 + & { margin-top: ((6-24)/24 * 1em); }
+	h4 + & { margin-top: ((6-18)/24 * 1em); }
+	h5 + & { margin-top: ((6-14)/24 * 1em); }
+	h6 + & { margin-top: ((6-10)/24 * 1em); }
+}
+
+h4 {
+	margin-top: (14/18 * 1em);
+	margin-bottom: (14/18 * 1em);
+	font-size: (18/18 * 1em);
+	line-height: (22/18 * 1em);
+	
+	h1 + & { margin-top: ((6-36)/18 * 1em); }
+	h2 + & { margin-top: ((6-30)/18 * 1em); }
+	h3 + & { margin-top: ((6-24)/18 * 1em); }
+	h4 + & { margin-top: ((6-18)/18 * 1em); }
+	h5 + & { margin-top: ((6-14)/18 * 1em); }
+	h6 + & { margin-top: ((6-10)/18 * 1em); }
+}
+
+h5 {
+	margin-top: (10/14 * 1em);
+	margin-bottom: (10/14 * 1em);
+	font-size: (14/18 * 1em);
+	line-height: (18/14 * 1em);
+	
+	h1 + & { margin-top: ((6-36)/14 * 1em); }
+	h2 + & { margin-top: ((6-30)/14 * 1em); }
+	h3 + & { margin-top: ((6-24)/14 * 1em); }
+	h4 + & { margin-top: ((6-18)/14 * 1em); }
+	h5 + & { margin-top: ((6-14)/14 * 1em); }
+	h6 + & { margin-top: ((6-10)/14 * 1em); }
+}
+
+h6 {
+	margin-top: (6/10 * 1em);
+	margin-bottom: (6/10 * 1em);
+	font-size: (10/18 * 1em);
+	line-height: (14/10 * 1em);
+	
+	h1 + & { margin-top: ((6-36)/10 * 1em); }
+	h2 + & { margin-top: ((6-30)/10 * 1em); }
+	h3 + & { margin-top: ((6-24)/10 * 1em); }
+	h4 + & { margin-top: ((6-18)/10 * 1em); }
+	h5 + & { margin-top: ((6-14)/10 * 1em); }
+	h6 + & { margin-top: ((6-10)/10 * 1em); }
+}
+
+p {
+	margin-top: (14/18 * 1em);
+	margin-bottom: (14/18 * 1em);
+	font-size: (18/18 * 1em);
+	line-height: (22/18 * 1em);
+	line-height: (24/18 * 1em);
+}
+
+a {
+	color: $link-color;
+	text-decoration: none;
+	opacity: 1;
+	@include transition-property( opacity );
+	@include transition-duration( .25s );
+
+	&:focus,
+	&:hover {
+		opacity: .75;
+	}
+}
+

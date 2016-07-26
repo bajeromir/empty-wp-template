@@ -1,0 +1,30 @@
+/*
+Theme Name: ...
+Theme URI: https://reaktor5.com/
+Author: the Reaktor 5 team
+Author URI: https://reaktor5.com/
+Description: ...
+Version: ...
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: 
+Text Domain: ...
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+/* import compass and susy */
+@import 'compass';
+@import 'grids';
+/* import mediaqueries and base project variables */
+@import 'mediaqueries';
+@import 'variables';
+/* import basic styles */
+@import 'setup';
+/* import header, main menu and footer styles */
+@import 'header';
+@import 'footer';
+/* single page, post styles */
+@import 'single-post';
+/* custom page styles */
